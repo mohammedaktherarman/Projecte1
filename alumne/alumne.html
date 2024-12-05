@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinantia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Consultar la teva assistencia</h1>
+        <div class="form-group">
+            <label for="id_alumno">El teu ID:</label>
+            <input type="text" id="id_alumno" name="id_alumno" required>
+            <label for="fecha">Posa el dia que vols consulta:</label>
+            <input type="text" id="fecha" name="fecha" required>
+            <button id="consultarBtn">Consultar</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="error" id="error" style="display: none;"></div>
+        
+        <div class="table-container" id="resultContainer" style="display: none;">
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Hora de Inici</th>
+                        <th>Hora de Fin</th>
+                        <th>Estat</th>
+                        <th>Aula</th>   
+                        <th>Asignatura</th>
+                    </tr>
+                </thead>
+                <tbody id="asistenciaData">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
