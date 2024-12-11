@@ -4,7 +4,7 @@ document.getElementById("addUserBtn").addEventListener("click", function() {
     const role = document.getElementById("role").value;
 
     if (userName === "" || password === "") {
-        showError("Tots els camps són obligatoris.");
+        alert("Tots els camps son obligatoris.");
         return;
     }
 
@@ -26,7 +26,7 @@ document.getElementById("removeUserBtn").addEventListener("click", function() {
     const selectedUser = userSelect.value;
 
     if (selectedUser === "") {
-        showError("Selecciona un usuari per eliminar.");
+        alert("Selecciona un usuari per eliminar.");
         return;
     }
 

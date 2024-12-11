@@ -21,7 +21,6 @@ document.getElementById('consultarBtn').addEventListener('click', function() {
 document.getElementById('pasarListaBtn').addEventListener('click', function() {
     alert('Llista passada');
 
-    // Ocultar la tabla y el botón después de pasar lista
     const resultContainer = document.getElementById('resultContainer');
     resultContainer.style.display = 'none';
 });
